@@ -1,6 +1,6 @@
-import hyeminLogo from '../assets/hyemin400.svg';
-import LinkedinLogo from '../assets/linkedin.svg';
-import BlogLogo from '../assets/blog.svg';
+import hyeminLogo from '@assets/hyemin400.svg';
+import LinkedinLogo from '@assets/linkedin.svg';
+import BlogLogo from '@assets/blog.svg';
 
 const MainPage = () => {
   return (

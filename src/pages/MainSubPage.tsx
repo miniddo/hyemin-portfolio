@@ -1,6 +1,6 @@
-import LinkedinLogo from '../assets/linkedin.svg';
-import BlogLogo from '../assets/blog.svg';
-import ArrowDownIcon from '../assets/arrowdown.svg';
+import LinkedinLogo from '@assets/linkedin.svg';
+import BlogLogo from '@assets/blog.svg';
+import ArrowDownIcon from '@assets/arrowdown.svg';
 
 const MainSubPage = () => {
   return (

@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .highlighter {
+    background-image: linear-gradient(#F8FA5B 0 100%);
+    background-position: 0 calc(100%);
+    background-size: 0 14px;
+    background-repeat: no-repeat;
+    transition: background-size 0.6s;
+  }
+  .group:hover .highlighter {
+    background-size: 100% 14px;
+  }
+}
+
 :root {
   /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
