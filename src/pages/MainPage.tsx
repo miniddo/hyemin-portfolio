@@ -3,39 +3,35 @@ import LinkedinLogo from '@assets/linkedin.svg';
 import BlogLogo from '@assets/blog.svg';
 
 const MainPage = () => {
+  const navList = [
+    { label: 'Solutions', target: '#about_me-page' },
+    { label: 'About us', target: '#project-page' },
+    { label: 'Contact', target: '#career-page' },
+  ];
+
   return (
     <section className="relative flex min-h-[100vh] flex-col justify-between bg-gradient-to-b from-[#a8c6e3] to-[#eff2f4]">
       <header className="mx-20 flex justify-between pt-20">
-        <div>
+        <div className="animate-main-fade-in opacity-0">
           <img src={hyeminLogo} alt="Hyemin logo" />
         </div>
-        <div className="flex flex-col justify-between">
+        <div className="ml-[14vh] flex flex-col justify-between">
           <div>
-            <ul className="flex items-center gap-12 text-4xl">
-              <li>
-                <a href="#target-section" className="group relative inline-block">
-                  About Me
-                  <span className="absolute bottom-0 left-0 block h-[0.1px] w-0 bg-[#000d10] transition-all duration-300 group-hover:w-full"></span>
-                </a>
-              </li>
-              <li>
-                <a href="#target-section" className="group relative inline-block">
-                  Career
-                  <span className="absolute bottom-0 left-0 block h-[0.1px] w-0 bg-[#000d10] transition-all duration-300 group-hover:w-full"></span>
-                </a>
-              </li>
-              <li>
-                <a href="#project-page" className="group relative inline-block">
-                  Projects
-                  <span className="absolute bottom-0 left-0 block h-[0.1px] w-0 bg-[#000d10] transition-all duration-300 group-hover:w-full"></span>
-                </a>
-              </li>
+            <ul className="animate-main-fade-in flex items-center gap-12 text-[1.4vw] opacity-0">
+              {navList.map((nav) => (
+                <li key={nav.label}>
+                  <a href={nav.target} className="group relative inline-block">
+                    {nav.label}
+                    <span className="absolute bottom-0 left-0 block h-[0.1px] w-0 bg-[#000d10] transition-all duration-300 group-hover:w-full"></span>
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
-          <div className="font-base pb-16 text-7xl font-semibold leading-[0.8] tracking-tight">
-            Frontend
+          <div className="font-base animate-position-fade-in pb-16 text-[3.8vw] font-semibold leading-[0.9] tracking-tight opacity-0">
+            Personalised
             <br />
-            Developer
+            Aviation
           </div>
         </div>
       </header>

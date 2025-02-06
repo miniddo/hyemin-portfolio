@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { MainPage, ProjectPage } from './pages';
-import { ProjectModal } from './components/molecules';
+import { MainPage, ProjectPage, AboutMePage, CareerPage, SkillPage } from '@/pages';
+import { ProjectModal } from '@/components/molecules';
 
 interface ProjectInfo {
   title: string;
@@ -27,6 +27,9 @@ function App() {
   return (
     <div className="h-full w-full">
       <MainPage />
+      <CareerPage />
+      <SkillPage />
+      <AboutMePage />
       <ProjectPage openModal={openProjectModal} />
 
       {isProjectModalOpen && selectedProject && (

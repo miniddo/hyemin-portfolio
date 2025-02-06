@@ -15,7 +15,7 @@ const ProjectPage = ({ openModal }: ProjectPageProps) => {
   const projectList = [
     {
       imgSrc:
-        'https://cdn.prod.website-files.com/6501e17b507eeeaff049b022/67901639eebcf9258487699c_6790157aa3bd2fbc5bc68ddf_Red-Note-Hero.jpeg',
+        'https://newsimg-hams.hankookilbo.com/2025/01/13/19543336-ecf4-4d5c-983f-b3e2a9e57b6e.jpg',
       subTitle: 'Words by Zoey Zhu and Savannah Kunovsky',
       title: 'Design Lessons from the Cultural Exchange on Red Note',
       description:
@@ -24,7 +24,7 @@ const ProjectPage = ({ openModal }: ProjectPageProps) => {
     },
     {
       imgSrc:
-        'https://cdn.prod.website-files.com/6501e17b507eeeaff049b022/67901639eebcf9258487699c_6790157aa3bd2fbc5bc68ddf_Red-Note-Hero.jpeg',
+        'https://newsimg-hams.hankookilbo.com/2025/01/13/19543336-ecf4-4d5c-983f-b3e2a9e57b6e.jpg',
       subTitle: 'Words by Zoey Zhu and Savannah Kunovsky',
       title: 'Design Lessons from the Cultural Exchange on Red Note',
       description:
@@ -33,7 +33,7 @@ const ProjectPage = ({ openModal }: ProjectPageProps) => {
     },
     {
       imgSrc:
-        'https://cdn.prod.website-files.com/6501e17b507eeeaff049b022/67901639eebcf9258487699c_6790157aa3bd2fbc5bc68ddf_Red-Note-Hero.jpeg',
+        'https://newsimg-hams.hankookilbo.com/2025/01/13/19543336-ecf4-4d5c-983f-b3e2a9e57b6e.jpg',
       subTitle: 'Words by Zoey Zhu and Savannah Kunovsky',
       title: 'Design Lessons from the Cultural Exchange on Red Note',
       description:
@@ -42,7 +42,7 @@ const ProjectPage = ({ openModal }: ProjectPageProps) => {
     },
     {
       imgSrc:
-        'https://cdn.prod.website-files.com/6501e17b507eeeaff049b022/67901639eebcf9258487699c_6790157aa3bd2fbc5bc68ddf_Red-Note-Hero.jpeg',
+        'https://newsimg-hams.hankookilbo.com/2025/01/13/19543336-ecf4-4d5c-983f-b3e2a9e57b6e.jpg',
       subTitle: 'Words by Zoey Zhu and Savannah Kunovsky',
       title: 'Design Lessons from the Cultural Exchange on Red Note',
       description:
@@ -51,7 +51,7 @@ const ProjectPage = ({ openModal }: ProjectPageProps) => {
     },
     {
       imgSrc:
-        'https://cdn.prod.website-files.com/6501e17b507eeeaff049b022/67901639eebcf9258487699c_6790157aa3bd2fbc5bc68ddf_Red-Note-Hero.jpeg',
+        'https://newsimg-hams.hankookilbo.com/2025/01/13/19543336-ecf4-4d5c-983f-b3e2a9e57b6e.jpg',
       subTitle: 'Words by Zoey Zhu and Savannah Kunovsky',
       title: 'Design Lessons from the Cultural Exchange on Red Note',
       description:
@@ -60,7 +60,7 @@ const ProjectPage = ({ openModal }: ProjectPageProps) => {
     },
     {
       imgSrc:
-        'https://cdn.prod.website-files.com/6501e17b507eeeaff049b022/67901639eebcf9258487699c_6790157aa3bd2fbc5bc68ddf_Red-Note-Hero.jpeg',
+        'https://newsimg-hams.hankookilbo.com/2025/01/13/19543336-ecf4-4d5c-983f-b3e2a9e57b6e.jpg',
       subTitle: 'Words by Zoey Zhu and Savannah Kunovsky',
       title: 'Design Lessons from the Cultural Exchange on Red Note',
       description:
@@ -72,11 +72,14 @@ const ProjectPage = ({ openModal }: ProjectPageProps) => {
   return (
     <section
       id="project-page"
-      className="relative flex min-h-[100vh] flex-col justify-between bg-[#f0f0ee]"
+      className="relative flex min-h-[100vh] flex-col justify-between bg-[#eff2f4]"
     >
-      <div className="relative h-full px-[2.5rem]">
+      <div className="relative h-full px-[2.5rem] py-[3.5rem]">
         <div className="ml-auto mr-auto max-w-[73.75rem] 2xl:max-w-[88.75rem]">
           <div className="ml-auto mr-auto w-full max-w-[73.75rem]">
+            <div className="opacity-70">
+              <p className="mb-[2rem] text-4xl font-semibold tracking-widest">PROJECT</p>
+            </div>
             <div
               role="list"
               className="grid-rows-auto grid-auto-cols-[1fr] grid grid-cols-3 gap-x-[3.125rem] gap-y-[6.25rem]"
