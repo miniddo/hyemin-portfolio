@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { MainPage, ProjectPage, AboutMePage, CareerPage, SkillPage } from '@/pages';
-import { ProjectModal } from '@/components/molecules';
+import { ProjectModal, CareerModal } from '@/components/molecules';
 
 interface ProjectInfo {
   title: string;
@@ -10,9 +10,23 @@ interface ProjectInfo {
   skills: string[];
 }
 
+interface CareerInfo {
+  type: 'A' | 'B';
+  company: string;
+  date: string;
+  position: string;
+  skills: string[];
+  responsibilities: string[];
+  description: string;
+  imgSrc: string;
+}
+
 function App() {
   const [isProjectModalOpen, setIsProjectModalOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState<ProjectInfo | null>(null);
+
+  const [isCareerModalOpen, setIsCareerModalOpen] = useState(false);
+  const [selectedCareer, setSelectedCareer] = useState<CareerInfo | null>(null);
 
   const openProjectModal = (project: ProjectInfo) => {
     setSelectedProject(project);
@@ -24,10 +38,20 @@ function App() {
     setSelectedProject(null);
   };
 
+  const openCareerModal = (career: CareerInfo) => {
+    setSelectedCareer(career);
+    setIsCareerModalOpen(true);
+  };
+
+  const closeCareerModal = () => {
+    setIsCareerModalOpen(false);
+    setSelectedCareer(null);
+  };
+
   return (
     <div className="h-full w-full">
       <MainPage />
-      <CareerPage />
+      <CareerPage openModal={openCareerModal} />
       <SkillPage />
       <AboutMePage />
       <ProjectPage openModal={openProjectModal} />
@@ -41,6 +65,18 @@ function App() {
           description={selectedProject.description}
           skills={selectedProject.skills}
           onClose={closeProjectModal}
+        />
+      )}
+
+      {isCareerModalOpen && selectedCareer && (
+        <CareerModal
+          isOpen={isCareerModalOpen}
+          company={selectedCareer.company}
+          date={selectedCareer.date}
+          position={selectedCareer.position}
+          skills={selectedCareer.skills}
+          responsibilities={selectedCareer.responsibilities}
+          onClose={closeCareerModal}
         />
       )}
     </div>
