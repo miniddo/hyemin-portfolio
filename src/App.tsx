@@ -51,9 +51,9 @@ function App() {
   return (
     <div className="h-full w-full">
       <MainPage />
+      <AboutMePage />
       <CareerPage openModal={openCareerModal} />
       <SkillPage />
-      <AboutMePage />
       <ProjectPage openModal={openProjectModal} />
 
       {isProjectModalOpen && selectedProject && (

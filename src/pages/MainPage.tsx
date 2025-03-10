@@ -4,9 +4,9 @@ import BlogLogo from '@assets/blog.svg';
 
 const MainPage = () => {
   const navList = [
-    { label: 'Solutions', target: '#about_me-page' },
-    { label: 'About us', target: '#project-page' },
-    { label: 'Contact', target: '#career-page' },
+    { label: 'About me', target: '#about_me-page' },
+    { label: 'Project', target: '#project-page' },
+    { label: 'Career', target: '#career-page' },
   ];
 
   return (
@@ -29,9 +29,9 @@ const MainPage = () => {
             </ul>
           </div>
           <div className="font-base animate-position-fade-in pb-16 text-[3.8vw] font-semibold leading-[0.9] tracking-tight opacity-0">
-            Personalised
+            Frontend
             <br />
-            Aviation
+            Developer
           </div>
         </div>
       </header>
